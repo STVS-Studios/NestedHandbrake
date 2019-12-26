@@ -6,7 +6,7 @@ It reads through any desired video-files on a nested location (such as a Plex me
 ## How to use this script
 (You need to have "HandBrakeCLI.exe" in the same directory as this script...)
 
-`nestedHandbrake.ps1 -input "MEDIA-SERVER-PATH" -filetype "FILETYPE" -output "OUTPUT-PATH" -resolution "RESOLUTION"`
+`NestedHandbrake.ps1 -input "MEDIA-SERVER-PATH" -filetype "FILETYPE" -output "OUTPUT-PATH" -resolution "RESOLUTION"`
 
 * -input: Path, where the videos are
 * -filetype: The desired filetype for input files (mp4, mkv, m4v, etc.)
