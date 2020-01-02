@@ -18,5 +18,6 @@ Then open the script in a powershell window (ensure you can execute those script
 * -filetype: The desired filetype for input files (mp4, mkv, m4v, etc.)
 * -output: Path to save the converted files
 * -resolution: (1080/780/480) correlates with HandBrake's official presets ("Fast 1080p30", "Fast 720p30" and "Fast 480p30")
+* -lang (language): defaults to "en_us", but can also be "ja_JP". Resulted in localized text in the desired language.
 
-Please take into account that this script also supports text-output in japanese for devices, with their language set to japanese. For those users, a change of the font used within Powershell would work better, due to some terminal fonts not supporting needed characters.
+Please take into account that this script also supports text-output in japanese for devices, with 'ja-JP' as the language parameter. For those users, a change of the font used within Powershell would work better, due to some terminal fonts not supporting needed characters.
