@@ -3,7 +3,7 @@
     [Parameter(Mandatory=$true)]$filetype,
     [Parameter(Mandatory=$true)]$output,
     [Parameter(Mandatory=$true)]$resolution,
-    [Parameter(Mandatory=$false)]$dlang
+    [Parameter(Mandatory=$false)]$lang
 )
 
 switch($filetype){
@@ -45,7 +45,7 @@ $files = Get-ChildItem -Path $input -Include *$filetype -Recurse -File -Force -E
 #Get-WinSystemLocale
 echo ""
 echo "---------------------------------------------------------------------------------------------"
-switch($dlang){
+switch($lang){
     "ja-jp"{echo $logo_jp}
     Default {echo $logo_int}
 }
@@ -60,7 +60,7 @@ foreach($file in $files) {
     if($des.contains('Season') -or $des.contains('OVA') ){
         $des = $file.Directory.Parent.Name + '/' + $des
     }
-    switch($dlang){
+    switch($lang){
         "ja-jp" {echo "$i を変換する。"}
         Default {echo "$convertingText.$dlang $i"}
     }
