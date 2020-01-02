@@ -12,7 +12,7 @@ Handbrake CLI is available at: https://handbrake.fr/downloads2.php
 
 Then open the script in a powershell window (ensure you can execute those scripts in the first place) with the following parameters:
 
-`NestedHandbrake.ps1 -input "MEDIA-SERVER-PATH" -filetype "FILETYPE" -output "OUTPUT-PATH" -resolution "RESOLUTION"`
+`NestedHandbrake.ps1 -input "MEDIA-SERVER-PATH" -filetype "FILETYPE" -output "OUTPUT-PATH" -resolution "RESOLUTION" -lang "LANGUAGE"`
 
 * -input: Path, where the videos are
 * -filetype: The desired filetype for input files (mp4, mkv, m4v, etc.)
