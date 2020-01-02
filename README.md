@@ -15,3 +15,5 @@ It reads through any desired video-files on a nested location (such as a Plex me
 * -filetype: The desired filetype for input files (mp4, mkv, m4v, etc.)
 * -output: Path to save the converted files
 * -resolution: (2160/1080/780/480) correlates with HandBrake's official presets ("Fast 2160p30", "Fast 1080p30", "Fast 720p30" and "Fast 480p30")
+
+Please take into account that this script also supports text-output in japanese for devices, with their language set to japanese. For those users, a change of the font used within Powershell would work better, due to some terminal fonts not supporting needed characters.
