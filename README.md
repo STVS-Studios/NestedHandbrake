@@ -1,13 +1,16 @@
-# NestedHandbrake (BETA)
+# NestedHandbrake
 A Powershell script to automate the encoding process on a whole nested media server, using HandBrakeCLI.
 
-It reads through any desired video-files on a nested location (such as a Plex mediaserver) and converts all of them via HandBrakeCLI. I created this script to optimize my video-files on my PC instead of my NAS. Hopefully this script will be as usefull for you as it was ,and still is, for me.
+It reads through any desired video-files on a nested location (such as a Plex mediaserver) and converts all of them via HandBrakeCLI. I created this script to optimize my video-files on my PC instead of my NAS. Hopefully this script will be as usefull for you as it was, and still is, for me.
 
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F1F51BI4D)
 
 
 ## How to use this script
 (You need to have "HandBrakeCLI.exe" in the same directory as this script...)
+Handbrake CLI is available at: https://handbrake.fr/downloads2.php
+
+Then open the script in a powershell window (ensure you can execute those scripts in the first place) with the following parameters:
 
 `NestedHandbrake.ps1 -input "MEDIA-SERVER-PATH" -filetype "FILETYPE" -output "OUTPUT-PATH" -resolution "RESOLUTION"`
 
