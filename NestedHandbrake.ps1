@@ -15,7 +15,6 @@ Default{exit}
 switch($resolution){
     "720" {$preset = "Fast 720p30"}
     "1080" {$preset = "Fast 1080p30"}
-    "2160"{$preset = "Fast 2160p30"}
     "480" {$preset = "Fast 480p30"}
     Default {$preset = "Fast 1080p30"}
 }
