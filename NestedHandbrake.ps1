@@ -65,9 +65,9 @@ foreach($file in $files) {
         Default {echo "$convertingText.$dlang $i"}
     }
     if( -not (Test-Path $output$des -PathType Container) ){
-#        mkdir "$output$des"
+        mkdir "$output$des"
     }
-#    .\HandBrakeCLI.exe -i "$in" -o "$output$des$i$extension" --preset="$preset" -O -s "scan" --audio-lang-list 'und' --all-audio --subtitle-lang-list 'Deutsch - [Deutsch]' --all-subtitles
+    .\HandBrakeCLI.exe -i "$in" -o "$output$des$i$extension" --preset="$preset" -O -s "scan" --audio-lang-list 'und' --all-audio --subtitle-lang-list 'Deutsch - [Deutsch]' --all-subtitles
     echo "Finished optimizing that video file"
 }
 echo "-------------------------------------------------"
